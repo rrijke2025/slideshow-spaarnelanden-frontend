@@ -1,3 +1,4 @@
+
 <script>
   import { onMount } from 'svelte';
   let slides = [], loop = true, index = 0;
@@ -26,7 +27,6 @@
       iframe.style.width = '100vw';
       iframe.style.height = '100vh';
       iframe.allow = 'fullscreen';
-      iframe.style.border = 'none';
       container.appendChild(iframe);
     }
 
@@ -54,5 +54,8 @@
     margin: 0;
     overflow: hidden;
     background: black;
+  }
+  iframe, img {
+    border: none;
   }
 </style>
